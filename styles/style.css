@@ -1,13 +1,14 @@
 .header {
   display: grid;
-  padding: 0 50px;
+  padding: 92px 50px 96px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  min-height: 293px;
 }
 
 .header__logo-img {
+  display: block;
   width: 148px;
+  height: 105px;
 }
 
 .contacts {
@@ -33,6 +34,10 @@
   list-style: none;
 }
 
+.menu__link_active {
+  text-decoration: none;
+}
+
 .cover {
   margin-bottom: 180px;
   padding: 165px 50px 50px 50px;
@@ -44,6 +49,7 @@
 }
 
 .cover__title {
+  margin-right: -30px;
   font-size: 100px;
   line-height: 1.15;
   letter-spacing: 30px;
@@ -57,6 +63,7 @@
 .cover__text {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 106px;
   font-size: 22px;
   line-height: 28px;
@@ -67,7 +74,7 @@
 }
 
 .cover__text p {
-  word-spacing: 8px;
+  word-spacing: 0.9em;
 }
 
 .cover__button {
@@ -80,6 +87,7 @@
   appearance: none;
   border: 2px solid #fff;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .overlay {
@@ -226,9 +234,12 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  min-height: 180px;
   align-items: start;
-  padding: 0 50px;
+  padding: 0 50px 82px;
+}
+
+.footer__contacts {
+  max-width: 265px;
 }
 
 .footer__menu {
@@ -248,7 +259,7 @@
   list-style: none;
 }
 
-.footer__menu-link_no-underline {
+.footer__menu-link_active {
   text-decoration: none;
 }
 
